@@ -24,6 +24,8 @@
   padding: 0;
   margin-top: 0;
   background-color: darkcyan;
+  position: fixed;
+  top: 0;
 }
 
 .nav-ul {
@@ -35,9 +37,209 @@
   padding: 10px;
 }
 
+.nav-ul > .active {
+  color: aqua;
+}
+
 .nav-li {
   color: white;
   font-family: "Bebas Neue", cursive;
   font-weight: bold;
+  font-size: 25px;
+}
+
+/*///////// CONTACT /////////*/
+.contact-all {
+  height: 100vh;
+}
+
+.contact-container {
+  width: 45%;
+  height: 150px;
+  max-width: 1024px;
+  border: 1px solid greenyellow;
+  margin: 50px auto;
+}
+
+/*///////// ABOUT ME /////////*/
+.about-all {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.about-container {
+  width: 90%;
+  max-width: 1024px;
+  border: 1px solid #fff;
+  margin: 50px auto;
+}
+
+.about-frame {
+  background-color: rgb(216, 216, 216);
+  margin-top: 180px;
+  height: 300px;
+  width: 95%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-title {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  margin-right: 150px;
+}
+
+.about-title p {
+  font-size: 25px;
+}
+
+.about-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+/*///////// SKILLS /////////*/
+.skills-all {
+  height: 100vh;
+}
+
+.skills-container {
+  width: 90%;
+  max-width: 1024px;
+  /* border: 1px solid greenyellow; */
+  margin: 0 auto;
+}
+
+.skills-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.skills-col {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid darkcyan;
+  border-radius: 5px;
+}
+
+.skills-title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: darkcyan;
+  font-family: "Rampart One", cursive;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.skill-title {
+  background-color: darkcyan;
+  font-family: "Bebas Neue", cursive;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+
+.skill-title.dark {
+  background-color: aquamarine;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.skill h6 {
+  margin-top: 27px;
+  margin-left: 30px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  font-weight: bolder;
+  color: darkcyan;
+}
+
+/*///////// PROJECTS /////////*/
+.projects-all {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.projects-container {
+  width: 90%;
+  max-width: 1024px;
+  /* border: 1px solid greenyellow; */
+  margin: 0 auto;
+}
+
+.projects-title {
+  text-align: center;
+  color: darkcyan;
+  font-family: "Rampart One", cursive;
+  font-weight: 500;
+  font-size: 60px;
+  margin-top: -20px;
+}
+
+.projects-frame {
+  background-color: rgb(216, 216, 216);
+  margin-top: 50px;
+  height: 400px;
+  width: 95%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-card {
+  border: 1px solid darkcyan;
+  background-color: #fff;
+  width: 30%;
+  border-radius: 5px;
+}
+
+.project-img {
+  width: 100%;
+  height: 160px;
+}
+
+.project-title {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 200;
+  font-size: 30px;
+  text-align: center;
+}
+
+.project-desc {
+  padding: 5%;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.project-btn {
+  width: 90%;
+  margin: 5px auto;
+  display: block;
+  height: 30px;
+  font-family: "Bebas Neue", cursive;
   font-size: 20px;
+  color: #fff;
+  background-color: darkcyan;
+  border: none;
+  border-radius: 5px;
+}
+
+/*///////// ICON /////////*/
+.icon-style {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  fill: cadetblue;
 }
