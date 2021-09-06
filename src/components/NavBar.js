@@ -1,9 +1,46 @@
-import React from 'react'
+import React, {useState, useEffect, useContext} from 'react'
+import {themeContext} from '../App'
 import {Link} from 'react-scroll'
+import {CgMenu} from 'react-icons/cg'
+import {FiMoon, FiSun} from 'react-icons/fi'
+
 
 export default function NavBar() {
+
+
+    const {theme, setTheme} = useContext(themeContext)
+    const [buttonState, setButtonState] = useState(false);
+
+    const handleResize = () => {
+        if(window.innerWidth >= 1024){
+            setButtonState(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize)
+    })
+
     return (
-    <div className="navbar">
+        <div className="container-navbar">
+            <div className="navbar-bar">
+            <CgMenu className="menu-burger" onClick={()=> setButtonState(!buttonState)}></CgMenu>
+                <ul className="navbar-ul" id={!buttonState ? "" : "hidden"}> 
+                    <li className="nav-li">Home</li>
+                    <li className="nav-li">Projects</li>
+                    <li className="nav-li">Skills</li>
+                    <li className="nav-li">Contact</li>
+                </ul>
+                {
+                    theme ? <FiMoon className="theme-icon" onClick={()=>setTheme(!theme)} />
+                    : <FiSun className="theme-icon" onClick={()=>setTheme(!theme)} />
+                }   
+            </div>
+        </div>
+    )
+}
+
+/* <div className="navbar">
         <div className="container-nav">
             <ul className="nav-ul">
                 <Link
@@ -42,20 +79,6 @@ export default function NavBar() {
                     offset={-100}
                     duration={1000}
                 >Contact</Link>
-                {/* <Link to="/"  className="link"> 
-                    <li className="nav-li">About</li>
-                </Link>
-                <Link to="/skills" className="link">
-                    <li className="nav-li">Skills</li>
-                </Link>
-                <Link to="/projects" className="link">
-                    <li className="nav-li">Projects</li>
-                </Link>
-                <Link to="/contact" className="link">
-                    <li className="nav-li">Contact</li>
-                </Link> */}
             </ul>
         </div>
-    </div>
-    )
-}
+    </div> */
