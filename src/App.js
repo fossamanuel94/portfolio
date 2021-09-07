@@ -27,9 +27,9 @@ function App() {
         <div className="skills-all">
           <Skills/>
         </div>
-        {/*<div className="contact-all">
+        <div className="contact-all">
           <Contact/>
-        </div> */}
+        </div>
       </div>
     </div>
     </themeContext.Provider>

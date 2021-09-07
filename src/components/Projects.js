@@ -9,7 +9,7 @@ export default function Projects() {
     }
 
     return (
-        <div className="projects-container">
+        <div className="projects-container" id="projects">
             <div className="projects-title">PROJECTS</div>
                 <div className="projects-desc-container">
                     <img className="project-img" src={technews}/>

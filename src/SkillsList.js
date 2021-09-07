@@ -1,8 +1,8 @@
 import DevIcon from 'devicon-react-svg'
+import {SiGmail} from 'react-icons/si'
 import './App.css'
-import expresslogo from "./images/expressjs.svg"
 
-const SkillsList=[
+export const SkillsList=[
     {
         skill_id:1,
         skill_img:<DevIcon icon="javascript" className="icon-style"/>,
@@ -66,4 +66,24 @@ const SkillsList=[
 
 ]
 
-export default SkillsList;
+export const ContactIcons=[
+    {
+        contact_id:1,
+        contact_img:<DevIcon icon="github" className="contact-icon-style"/>,
+        contact_name: "GitHub Profile",
+        contact_link: "https://github.com/fossamanuel94"
+    },
+    {
+        contact_id:2,
+        contact_img:<DevIcon icon="linkedin" className="contact-icon-style in"/>,
+        contact_name: "LinkedIn Profile",
+        contact_link: "https://www.linkedin.com/in/manuel-fossa-a5a2a01bb/"
+    },
+    {
+        contact_id:3,
+        contact_img:<SiGmail className="contact-icon-style gmail"/>,
+        contact_name: "manuelfossa94@gmail.com",
+        contact_link: ""
+    }
+]
+

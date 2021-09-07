@@ -1,10 +1,10 @@
 import React from 'react'
-import SkillsList from '../SkillsList'
+import {SkillsList} from '../SkillsList'
 import "../App.css"
 
 export default function Skills() {
     return (
-        <div className="skills-container">
+        <div className="skills-container" id="skills">
             <div className="skills-title">SKILLS</div>
             <div className="skills-desc-container">
                 {SkillsList.map((skill)=>{
