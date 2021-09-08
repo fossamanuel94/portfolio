@@ -329,6 +329,10 @@ hr {
   display: none;
 }
 
+.navbar-ul > .active {
+  color: var(--item-color);
+}
+
 .nav-li {
   font-family: "Orbitron", sans-serif;
   font-size: 20px;
@@ -340,12 +344,20 @@ hr {
   list-style: none;
 }
 
+.nav-li:hover {
+  cursor: pointer;
+}
+
 .menu-burger {
   color: var(--item-color);
   padding-top: 5px;
   padding-left: 10px;
   width: 40px;
   height: 40px;
+}
+
+.menu-burger:hover {
+  cursor: pointer;
 }
 
 #hidden {
@@ -367,6 +379,9 @@ hr {
   padding-bottom: 4px;
   margin-left: 220px;
   color: var(--text-color);
+}
+.theme-icon:hover {
+  cursor: pointer;
 }
 
 /*                  ABOUT               */
@@ -504,6 +519,10 @@ hr {
   color: var(--ctn-bg-color);
 }
 
+.project-button:hover {
+  cursor: pointer;
+}
+
 /*                  SKILLS                */
 
 .skills-all {
@@ -543,15 +562,21 @@ hr {
   margin: 40px auto;
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   flex-flow: wrap;
 }
 
 .skill {
+  width: 25%;
   padding: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: wrap;
+  /* border: 1px solid greenyellow; */
 }
 
 .skill p {
@@ -561,8 +586,8 @@ hr {
 }
 
 .icon-style {
-  width: 50px;
-  height: 50px;
+  width: auto;
+  /* height: 50px; */
   margin: 5px;
   fill: var(--item-color);
 }
@@ -635,6 +660,10 @@ hr {
   width: 100%;
   height: 100%;
   fill: var(--item-color);
+}
+
+.contact-icon-style:hover {
+  cursor: pointer;
 }
 
 .contact-icon-style.in {
