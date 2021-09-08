@@ -556,7 +556,7 @@ hr {
 
 .skills-desc-container {
   width: 90%;
-  height: 375px;
+  height: auto;
   background-color: var(--ctn-bg-color);
   transition: background-color var(--transition-delay);
   margin: 40px auto;
@@ -685,6 +685,52 @@ hr {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 375px){
+  
+  /*       NAVBAR      */
+  .theme-icon{
+    margin-left: 270px;
+  }
+
+  /*        ABOUT      */
+  .about-img{
+    margin-top: 100px;
+  }
+
+  /*       PROJECTS    */
+  .projects-desc-container{
+    margin-top: 35px;
+  }
+
+  .project-img{
+    height: 125px;
+  }
+
+  /*       CONTACT     */
+
+  .contact-img{
+    width: 75px;
+    height: 75px;
+  }
+
+  .contact-icon-style.gmail{
+    width: 55px;
+    height: 55px;
+    margin-top: 12px;
+    margin-left: 2px;
+  }
+
+  .contact-icon-style.in{
+    margin-left: 9px;
+    margin-top: 10px;
+  }
+
+  .contact-icon p{
+    margin-top: 35px;
+  }
+
+}
+
 @media screen and (min-width: 1024px) {
   .menu-burger {
     display: none;
@@ -703,4 +749,5 @@ hr {
   .nav-li {
     font-size: 18px;
   }
+
 }
