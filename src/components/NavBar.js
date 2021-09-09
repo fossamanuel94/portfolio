@@ -66,6 +66,10 @@ export default function NavBar() {
                     duration={1000}
                     onClick={()=>setButtonState(false)}
                 >Contact</Link>
+                {<li className="nav-li-theme">{
+                    theme ? <FiMoon className="theme-icon-desk" onClick={()=>setTheme(!theme)} />
+                    : <FiSun className="theme-icon-desk" onClick={()=>setTheme(!theme)} />    
+                }</li>}
                 </ul>
                 {
                     theme ? <FiMoon className="theme-icon" onClick={()=>setTheme(!theme)} />
