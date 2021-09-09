@@ -863,13 +863,13 @@ hr {
 
   .about-container {
     max-width: 1024px;
-    margin: 100px auto;
+    /* margin: 0 auto; */
   }
 
   /*          PROJECTS        */
   .projects-container {
     max-width: 1024px;
-    margin: 100px auto;
+    /* margin: 0 auto; */
   }
 
   .project-img {
@@ -883,12 +883,12 @@ hr {
   /*         SKILLS       */
   .skills-container {
     max-width: 1024px;
-    margin: 100px auto;
+    /* margin: 0 auto; */
   }
 
   /*         CONTACT       */
   .contact-container {
     max-width: 1024px;
-    margin: 100px auto;
+    /* margin: 0 auto; */
   }
 }
