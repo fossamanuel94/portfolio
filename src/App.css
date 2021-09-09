@@ -484,7 +484,7 @@ hr {
 .project-img {
   margin: 5px;
   width: 96%;
-  height: 110px;
+  height: 100px;
   border-radius: 10px;
 }
 
@@ -492,6 +492,10 @@ hr {
   color: var(--text-color);
   font-family: "Orbitron", sans-serif;
   font-size: 20px;
+}
+
+.projects-desc-container h3 {
+  display: none;
 }
 
 .projects-desc-container h4 {
@@ -640,7 +644,7 @@ hr {
   width: 90%;
   background-color: var(--ctn-bg-color);
   transition: background-color var(--transition-delay);
-  margin: 10px auto;
+  margin: 5px auto;
   border-radius: 10px;
 }
 
@@ -685,53 +689,144 @@ hr {
   margin-top: 20px;
 }
 
-@media screen and (min-width: 375px){
-  
+@media screen and (min-width: 375px) {
   /*       NAVBAR      */
-  .theme-icon{
+  .theme-icon {
     margin-left: 270px;
   }
 
   /*        ABOUT      */
-  .about-img{
+  .about-img {
     margin-top: 100px;
   }
 
   /*       PROJECTS    */
-  .projects-desc-container{
+  .projects-desc-container {
     margin-top: 35px;
   }
 
-  .project-img{
+  .project-img {
     height: 125px;
   }
 
   /*       CONTACT     */
 
-  .contact-img{
+  .contact-img {
     width: 75px;
     height: 75px;
   }
 
-  .contact-icon-style.gmail{
+  .contact-icon-style.gmail {
     width: 55px;
     height: 55px;
     margin-top: 12px;
     margin-left: 2px;
   }
 
-  .contact-icon-style.in{
+  .contact-icon-style.in {
     margin-left: 9px;
     margin-top: 10px;
   }
 
-  .contact-icon p{
+  .contact-icon p {
     margin-top: 35px;
   }
+}
 
+@media screen and (min-width: 425px) {
+  /*        NAVBAR     */
+  .theme-icon {
+    margin-left: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*          NAVBAR      */
+  .theme-icon {
+    margin-left: 650px;
+  }
+
+  /*          ABOUT       */
+  .about-img {
+    width: 250px;
+    height: 250px;
+  }
+  .about-desc {
+    padding-top: 60px;
+  }
+
+  /*        PROJECTS      */
+  .projects-desc-container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+  }
+
+  .projects-desc-container h1 {
+    margin-top: 10px;
+  }
+
+  .project-img {
+    width: 30%;
+    height: 110px;
+    padding: 10px;
+  }
+
+  .project-desc-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .project-desc-text h3 {
+    font-family: "Orbitron", sans-serif;
+    color: var(--text-color);
+    font-size: 12px;
+    display: contents;
+  }
+
+  .project-desc-text h3 span {
+    color: var(--item-color);
+  }
+
+  .button-container {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+  }
+
+  .project-button {
+    margin-top: -5px;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  /*         SKILLS        */
+  .skill {
+    width: 20%;
+    flex-direction: column;
+  }
+
+  .skill p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .skill-express {
+    font-size: 70px;
+  }
+
+  .icon-style {
+    width: 70px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  /*          NAVBAR       */
+
   .menu-burger {
     display: none;
   }
@@ -750,4 +845,36 @@ hr {
     font-size: 18px;
   }
 
+  /*        ABOUT     */
+
+  .about-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  /*          PROJECTS        */
+  .projects-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .project-img {
+    height: 140px;
+  }
+
+  .project-desc-text h3 {
+    font-size: 14px;
+  }
+
+  /*         SKILLS       */
+  .skills-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  /*         CONTACT       */
+  .contact-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }

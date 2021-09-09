@@ -13,7 +13,12 @@ export default function Projects() {
             <div className="projects-title">PROJECTS</div>
             <div className="projects-desc-container">
                 <img className="project-img" src={technews} />
-                <h1>Tech News</h1>
+                <div className="project-desc-text">
+                    <h1>Tech News</h1>
+                    <h3>Web about the latest tech information. Technologies used for the project: 
+                        <span>ReactJs - HTML - CSS - NodeJs - Express - MySQL</span>
+                    </h3>
+                </div>
                 <div className="button-container">
                     <button className="project-button" onClick={() => Submit("https://technews24.netlify.app")}>Web</button>
                     <button className="project-button" onClick={() => Submit("https://github.com/fossamanuel94/react-project")}>Front Code</button>
@@ -22,7 +27,13 @@ export default function Projects() {
             </div>
             <div className="projects-desc-container">
                 <img className="project-img" src={portfolio2} />
-                <h1>Portfolio</h1>
+                <div className="project-desc-text">
+                    <h1>Portfolio</h1>
+                    <h3>My personal Portfolio. 
+                        <br></br>Technologies used for the project: 
+                        <span>ReactJs - HTML - CSS</span>
+                    </h3>
+                </div>
                 <div className="button-container">
                     <button className="project-button" onClick={() => Submit("https://github.com/fossamanuel94/portfolio")}>Code</button>
                 </div>
