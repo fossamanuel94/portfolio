@@ -863,9 +863,18 @@ hr {
     max-width: 1024px;
   }
 
+  .about-desc-container {
+    width: 75%;
+    margin: -5px auto;
+  }
+
   /*          PROJECTS        */
   .projects-container {
     max-width: 1024px;
+  }
+
+  .projects-desc-container {
+    width: 75%;
   }
 
   .project-img {
@@ -881,8 +890,77 @@ hr {
     max-width: 1024px;
   }
 
+  .skills-desc-container {
+    width: 75%;
+  }
+
   /*         CONTACT       */
   .contact-container {
     max-width: 1024px;
+  }
+
+  .contact-desc-container {
+    width: 75%;
+  }
+
+  .contact-icon p {
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /*        SKILLS      */
+  .skills-title {
+    font-size: 45px;
+  }
+
+  .skill {
+    width: 30%;
+  }
+
+  .icon-style {
+    width: 100px;
+  }
+
+  .skill p {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .skill-express {
+    font-size: 90px;
+    font-weight: 200;
+  }
+
+  /*          CONTACT     */
+  .contact-title {
+    font-size: 45px;
+    margin-bottom: 100px;
+  }
+
+  .contact-desc-container {
+    margin-top: 30px;
+  }
+
+  .contact-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact-icon-style.in {
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+
+  .contact-icon-style.gmail {
+    width: 90px;
+    height: 90px;
+  }
+
+  .contact-icon p {
+    font-size: 30px;
+    margin-top: 40px;
   }
 }
