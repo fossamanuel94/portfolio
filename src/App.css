@@ -394,8 +394,6 @@ hr {
   min-height: 600px;
   background-color: var(--bg-color);
   transition: background-color var(--transition-delay);
-  /* padding: 25px; */
-  /* border: 1px solid rgb(143, 92, 209); */
 }
 
 .about-container {
@@ -863,13 +861,11 @@ hr {
 
   .about-container {
     max-width: 1024px;
-    /* margin: 0 auto; */
   }
 
   /*          PROJECTS        */
   .projects-container {
     max-width: 1024px;
-    /* margin: 0 auto; */
   }
 
   .project-img {
@@ -883,12 +879,10 @@ hr {
   /*         SKILLS       */
   .skills-container {
     max-width: 1024px;
-    /* margin: 0 auto; */
   }
 
   /*         CONTACT       */
   .contact-container {
     max-width: 1024px;
-    /* margin: 0 auto; */
   }
 }

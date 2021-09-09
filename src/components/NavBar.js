@@ -32,7 +32,7 @@ export default function NavBar() {
                     to="about"
                     spy={true}
                     smooth={true}
-                    offset={-100}
+                    offset={-150}
                     duration={1000}
                     onClick={()=>setButtonState(false)}
                 >About</Link>
@@ -42,7 +42,7 @@ export default function NavBar() {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-150}
                     duration={1000}
                     onClick={()=>setButtonState(false)}
                 >Projects</Link>
@@ -52,7 +52,7 @@ export default function NavBar() {
                     to="skills"
                     spy={true}
                     smooth={true}
-                    offset={-100}
+                    offset={-150}
                     duration={1000}
                     onClick={()=>setButtonState(false)}
                 >Skills</Link>
@@ -62,7 +62,7 @@ export default function NavBar() {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    offset={-100}
+                    offset={-150}
                     duration={1000}
                     onClick={()=>setButtonState(false)}
                 >Contact</Link>
