@@ -440,6 +440,10 @@ hr {
   content: "/>";
 }
 
+.about-h3 {
+  display: none;
+}
+
 /*                 PROJECTS               */
 
 .projects-all {
@@ -753,7 +757,17 @@ hr {
     height: 250px;
   }
   .about-desc {
-    padding-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .about-h3 {
+    display: contents;
+    color: var(--text-color);
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: "Orbitron", sans-serif;
   }
 
   /*        PROJECTS      */
@@ -911,6 +925,29 @@ hr {
 }
 
 @media screen and (min-width: 1920px) {
+  /*        ABOUT         */
+  .about-container {
+    padding-top: 100px;
+  }
+
+  .about-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-h3 {
+    font-size: 20px;
+  }
+
+  /*        PROJECTS        */
+  .projects-container {
+    padding-top: 50px;
+  }
+
+  .projects-title {
+    font-size: 45px;
+  }
+
   /*        SKILLS      */
   .skills-title {
     font-size: 45px;
